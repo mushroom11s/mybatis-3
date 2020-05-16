@@ -92,4 +92,9 @@ public class MapperProxy<T> implements InvocationHandler, Serializable {
         & (Modifier.ABSTRACT | Modifier.PUBLIC | Modifier.STATIC)) == Modifier.PUBLIC
         && method.getDeclaringClass().isInterface();
   }
+
+  public static void main(String[] args) {
+    String hashTest= "123";
+    System.out.println(hashTest.hashCode());
+  }
 }
